@@ -1,0 +1,23 @@
+<template>
+    <!-- 2- card olusturalim -->
+    <lightning-card title="if true-false kullanimi">
+        <h1 class="slds-var-m-around_medium">flag = {flag}</h1> 
+        <template if:true={flag}> 
+            <h1 class="slds-align_absolute-center">flag true, bu mesaj goruldu</h1>
+        </template>
+    </lightning-card>
+    <!-- -----------------------------GELİSTRİME -->
+    <!-- A-checkbox gelistirmesi icin yeni bir card olusturun -->
+    <lightning-card title="SOZLESME" class="slds-text-title_bold">
+        <template if:false={display}>
+            <h1 class="slds-var-m-around_medium"> Lutfen sozlesmeyi kabul ediniz</h1>
+        </template>
+
+        <lightning-input 
+        type="checkbox" 
+        label="Kabul Ediniz" 
+        onchange={handleChange}
+        class="slds-var-m-around_medium"
+        ></lightning-input>
+    </lightning-card>
+</template>

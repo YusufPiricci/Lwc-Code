@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="Create Contact" icon-name="standard:contact">
+        <div class="slds-var-m-around_medium">
+            <form class="contactForm">
+               <lightning-input 
+                    type="text"
+                    label="First Name"
+                    name="FirstName"
+
+               ></lightning-input> 
+                <lightning-input 
+                    type="text"
+                    label="Last Name"
+                    name="LastName"
+
+               ></lightning-input>
+               <lightning-combobox
+                    label="Lead Source"
+                    name="LeadSource"
+                    options={leadSourceOptions}
+                    object-api-name={objectName}
+               >
+               </lightning-combobox>
+               <div class="slds-var-m-around_medium slds-align_absolute-center">
+                    <lightning-button
+                        variant="brand-outline"
+                        label="Cancel"
+                        class="slds-m-left_x-small"
+                    >
+
+                    </lightning-button>
+                    <lightning-button
+                        variant="brand"
+                        label="Save"
+                        class="slds-m-left_x-small"
+                    >
+
+                    </lightning-button>
+                </div>
+            </form>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="For Each Loop">
+        <template for:each={cityList} for:item="w">
+            <p key={w} class="slds-m-around_medium">{w}</p>
+        </template>
+    </lightning-card>
+
+    <lightning-card title="Musteri Listesi">
+        <ul>
+            <template for:each={customerList} for:item="w">  
+                <li key={w.id}>
+                    <div>{w.id}</div>
+                    <div> Name :  {w.name}</div>
+                    <div> Phone : {w.phone}</div>
+                    <div>Email : {w.email}</div>
+                    <img src={w.imgURL} alt=""> 
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

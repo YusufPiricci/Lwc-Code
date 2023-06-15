@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="HOMEWORK" icon-name="custom:custom37">
+    <lightning-input type="name" 
+    name="First Name" 
+    label="Adinizi Giriniz" 
+    onchange={nameHandler} 
+    class="slds-var-m-around_medium"
+    style="color: blue;"
+    >
+        
+    </lightning-input>
+    <lightning-input type="lastName" 
+    name="Last Name" 
+    label="Soyadinizi Giriniz" 
+    onchange={lastNameHandler} 
+    class="slds-var-m-around_medium">
+        
+
+    </lightning-input>
+        <div class="slds-var-m-around_large">
+
+           <strong> {upperName}</strong>
+        </div> 
+    </lightning-card>
+    
+</template>

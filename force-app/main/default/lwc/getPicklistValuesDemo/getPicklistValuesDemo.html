@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="GET PICLIST VALUES">
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox
+                label="Select your Industry"
+                options={industryOptions}
+                onchange={industryChangeHandler}
+            ></lightning-combobox>
+            <div class="slds-var-m-top_medium">
+                Selected Industry is : {selectedIndustry}
+            </div>
+        </div>
+    </lightning-card>
+</template>

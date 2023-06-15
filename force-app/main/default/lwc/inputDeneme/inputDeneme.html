@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Deneme" icon-name="custom:custom17">
+        <lightning-input type="text" label="isim" class="slds-var-m-around_large" onchange={handleInput1}>
+
+        </lightning-input>
+        <lightning-input type="text" label="soyisim" class="slds-var-m-around_large" onchange={handleInput2}>
+
+        </lightning-input>
+        <lightning-input type="phone" label="phone" class="slds-var-m-around_large" onchange={handleInput3}></lightning-input>
+        <div class="slds-var-m-around_medium">
+        <lightning-input type="toggle" label="Show Details" onchange={handleClick}></lightning-input>
+
+        <template lwc:if={click}>
+            <ul>
+                <li>First Name : <strong>{fName}</strong> </li>
+                <li>Last Name : <strong>{lName}</strong></li>
+                <li>Phone : <strong>{phone}</strong></li>
+            </ul>
+        </template>
+    </div>
+    </lightning-card>
+</template>

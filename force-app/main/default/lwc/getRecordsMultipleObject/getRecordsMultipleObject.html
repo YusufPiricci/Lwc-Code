@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="GET RECORDS :MULTI OBJECT">
+        <div class="slds-var-m-around_medium">
+            <strong>Accounts:</strong>
+            <template if:true={accounts}>
+                <strong>Name</strong> {accounts.result.fields.Name.value} <br>
+            </template>
+            <strong>Contacts:</strong>
+            <template if:true={contacts}>
+                <strong>Name</strong> {contacts.result.fields.Name.value} <br>
+            </template>
+        </div>
+    </lightning-card>
+</template>

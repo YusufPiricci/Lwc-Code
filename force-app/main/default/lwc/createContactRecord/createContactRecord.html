@@ -1,0 +1,52 @@
+<template>
+    <lightning-card  title="CONTACT INPUT FORM" icon-name="standard:contact">
+        <div class="slds-var-m-around_medium">
+            <form class="ContactOlusturForm">
+            <lightning-input
+            type ="text"
+            name ="FirstName"
+            label="Isminizi giriniz."
+            onchange={changeHandler}
+            >
+            </lightning-input>
+            <lightning-input
+            type ="text"
+            name ="LastName"
+            label="Soyisminizi giriniz."
+            onchange={changeHandler}
+            >
+            </lightning-input>
+            <lightning-input
+            type ="text"
+            name ="Title"
+            label="Baslik degerini giriniz"
+            onchange={changeHandler}
+            >
+            </lightning-input>
+            <lightning-input
+            type ="email"
+            name ="Email"
+            label="Mail Adresinizi Giriniz"
+            onchange={changeHandler}
+            >
+            </lightning-input>
+            <lightning-input
+            type ="tel"
+            name ="Phone"
+            label="Telefon numaranizi giriniz"
+            onchange={changeHandler}
+            >
+            </lightning-input> 
+            
+            <lightning-button label="Save"
+            variant="brand"
+            onclick={contactOlustur}
+            class="slds-align_absolute-center"
+            >
+
+            </lightning-button>
+        </form>
+        </div>    
+    </lightning-card>
+    
+</template>

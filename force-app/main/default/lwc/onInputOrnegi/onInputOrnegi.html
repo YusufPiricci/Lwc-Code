@@ -1,0 +1,12 @@
+<template>
+    <!-- 2-card olusturalim ki daha derli toplu gozuksun -->
+    <lightning-card title="oninput" icon-name="standard:apex">
+            <div class="slds-m-around_medium">Adi: {isim} </div>
+            <!-- 3-Normal Input olusturalim -->
+            <input 
+            type="text" 
+            value={isim} 
+            oninput={handleinput} 
+            class="slds-m-around_medium">
+    </lightning-card>
+</template>
